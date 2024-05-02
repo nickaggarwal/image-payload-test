@@ -14,7 +14,7 @@ class InferlessPythonModel:
     def infer(self, inputs):
         prompt = inputs["prompt"]
         print("Hello World Promt 15")
-        url = "https://drive.google.com/file/d/1u7Ijpq9p8bNXHEs-5TK2Y9WsC-UONe1N/view?usp=sharing" 
+        url = "https://inferless-public.s3.amazonaws.com/test.png" 
         img_str = self.url_to_base64(url)
         return { "generated_image_base64" : img_str }
         
